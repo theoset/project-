@@ -1,46 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>About Handled</title>
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Handled</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<nav>
-    <!-- SAME NAVBAR -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html">handled<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="worker-login.html">Workers</a></li>
+    <li><a href="post-job.html" class="nav-cta">Post a Job</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-mobile" id="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="worker-login.html">Workers</a></li>
+    <li><a href="post-job.html" class="mobile-cta">Post a Job →</a></li>
+  </ul>
+</div>
 
+<!-- About Hero -->
+<div class="about-hero">
+  <div class="container" style="text-align:center;">
+    <span class="section-label">Our story</span>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2rem,4vw,3.2rem);font-weight:800;color:var(--white);letter-spacing:-0.03em;margin-bottom:1rem;">Built for Botswana</h1>
+    <p style="color:rgba(255,255,255,0.65);font-size:1.05rem;max-width:580px;margin:0 auto;line-height:1.75;">Finding trustworthy help for home jobs in Botswana has always been word-of-mouth. Handled changes that — by making it easy to post a task, find a verified worker, and complete a job with full accountability on both sides.</p>
+  </div>
+</div>
+
+<!-- Our Story -->
 <section class="section">
-
-<h1>About Us</h1>
-
-<p>
-Handled connects trusted workers with customers across Botswana.
-</p>
-
-<h2>Our Mission</h2>
-
-<p>
-To make home services easy, safe and affordable.
-</p>
-
-<h2>Our Values</h2>
-
-<ul>
-
-<li>Trust</li>
-
-<li>Transparency</li>
-
-<li>Reliability</li>
-
-<li>Safety</li>
-
-</ul>
-
+  <div class="container">
+    <div class="about-story">
+      <div class="about-story-text">
+        <span class="section-label">Why we exist</span>
+        <h2>The home services market needed a reset</h2>
+        <p>In Gaborone, finding a reliable plumber, cleaner, or handyman has always meant asking a neighbour or scrolling through Facebook groups — with no way to verify who you're letting into your home.</p>
+        <p>Handled was built to change that. Every worker is identity-verified before they can take a single job. Every job has mandatory before and after photos. And every price is shown upfront — no negotiating on the doorstep.</p>
+        <p>We're starting in Gaborone and building from the ground up — with local workers, local prices, and a product that understands how Botswana actually works.</p>
+      </div>
+      <div>
+        <div class="about-img-placeholder">
+          <span>📷</span>
+          <p style="font-size:0.85rem;">Real worker photo to be added</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Values -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Our values</span>
+      <h2 class="section-title">What we stand for</h2>
+    </div>
+    <div class="about-pillars">
+      <div class="pillar"><span class="pillar-icon">🛡️</span><div class="pillar-title">Trust first</div><div class="pillar-text">Every worker is KYC-verified before they can take any job.</div></div>
+      <div class="pillar"><span class="pillar-icon">💬</span><div class="pillar-title">Transparency</div><div class="pillar-text">Prices are fixed and shown before you post. No surprises.</div></div>
+      <div class="pillar"><span class="pillar-icon">📸</span><div class="pillar-title">Accountability</div><div class="pillar-text">Before and after photos are mandatory on every job.</div></div>
+      <div class="pillar"><span class="pillar-icon">🤝</span><div class="pillar-title">Fair for workers</div><div class="pillar-text">Workers set their availability and keep 85% of every job.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust & Safety -->
+<section class="section">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Trust &amp; Safety</span>
+      <h2 class="section-title">What happens when something goes wrong</h2>
+    </div>
+    <div class="safety-steps">
+      <div class="safety-step">
+        <div class="safety-num">1</div>
+        <div class="safety-title">Contact support within 48 hours</div>
+        <div class="safety-text">Email or WhatsApp us within 48 hours of the job being marked done to open a dispute.</div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-num">2</div>
+        <div class="safety-title">We review the photos</div>
+        <div class="safety-text">Both the before and after photos are reviewed by our team to assess the situation fairly.</div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-num">3</div>
+        <div class="safety-title">Mediation &amp; resolution</div>
+        <div class="safety-text">We contact both parties and work toward a fair outcome. Refunds are assessed case by case.</div>
+      </div>
+      <div class="safety-step">
+        <div class="safety-num">4</div>
+        <div class="safety-title">Escalation</div>
+        <div class="safety-text">If unresolved, the case may be referred to a third party or relevant authority in Botswana.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Photo Gallery -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Our workers in action</span>
+      <h2 class="section-title">Real jobs, real people</h2>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-placeholder"><span>📷</span><small>Real worker photo — to be added</small></div>
+      <div class="photo-placeholder"><span>📷</span><small>Before / after job — to be added</small></div>
+      <div class="photo-placeholder"><span>📷</span><small>Gaborone home — to be added</small></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">handled<span>.</span></div><div class="footer-tagline">Trusted home services in Botswana. Post a task, find a verified worker, get it done.</div></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">House Cleaning</a></li><li><a href="services.html">Gardening</a></li><li><a href="services.html">Handyman</a></li><li><a href="services.html">Plumbing</a></li><li><a href="services.html">Moving</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      <div class="footer-col"><h4>Account</h4><ul><li><a href="post-job.html">Post a Job</a></li><li><a href="customer-login.html">Customer Login</a></li><li><a href="worker-login.html">Worker Login</a></li><li><a href="worker-register.html">Become a Worker</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Handled. Built for Botswana.</p><p>Launching in Gaborone ✦</p></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="main.js"></script>
 </body>
 </html>
