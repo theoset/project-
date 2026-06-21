@@ -1,73 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Handled | Services</title>
-
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services & Pricing — Handled</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-<nav>
-    <!-- SAME NAVBAR -->
+ 
+<nav class="nav">
+  <a class="nav-logo" href="index.html">handled<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="worker-login.html">Workers</a></li>
+    <li><a href="post-job.html" class="nav-cta">Post a Job</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleMobileNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-
+<div class="nav-mobile" id="mobile-nav">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="worker-login.html">Workers</a></li>
+    <li><a href="post-job.html" class="mobile-cta">Post a Job →</a></li>
+  </ul>
+</div>
+ 
+<div class="page-header">
+  <h1>Services &amp; Pricing</h1>
+  <p>Fixed, transparent prices on every service. Transport fee added automatically to every job.</p>
+</div>
+ 
 <section class="section">
-
-<h1>Services & Pricing</h1>
-
-<div class="services-grid">
-
-<div class="service-card">
-<h3>🏠 House Cleaning</h3>
-
-<ul>
-<li>Single Room - P120</li>
-<li>1 Bedroom - P180</li>
-<li>2 Bedroom - P250</li>
-<li>3 Bedroom - P350</li>
-</ul>
-
-</div>
-
-<div class="service-card">
-<h3>🌿 Gardening</h3>
-
-<ul>
-<li>Small Garden - P120</li>
-<li>Medium Garden - P220</li>
-<li>Large Garden - P350</li>
-</ul>
-
-</div>
-
-<div class="service-card">
-<h3>🔨 Handyman</h3>
-
-<ul>
-<li>Simple Fix - P120</li>
-<li>TV Mounting - P250</li>
-</ul>
-
-</div>
-
-<div class="service-card">
-<h3>🔧 Plumbing</h3>
-
-<ul>
-<li>Leaking Tap - P150</li>
-<li>Blocked Drain - P220</li>
-</ul>
-
-</div>
-
-</div>
-
+  <div class="container">
+ 
+    <div class="pricing-section-title">🏠 House Cleaning</div>
+    <table class="pricing-table">
+      <thead><tr><th>Option</th><th>Description</th><th>Price</th></tr></thead>
+      <tbody>
+        <tr><td>Single Room</td><td>One room deep cleaned</td><td><span class="price-badge">P120</span></td></tr>
+        <tr><td>1 Bedroom</td><td>Full 1-bedroom home</td><td><span class="price-badge">P180</span></td></tr>
+        <tr><td>2 Bedroom</td><td>Full 2-bedroom home</td><td><span class="price-badge">P250</span></td></tr>
+        <tr><td>3 Bedroom</td><td>Full 3-bedroom home</td><td><span class="price-badge">P350</span></td></tr>
+        <tr><td>4+ Bedroom</td><td>Large home — quote provided</td><td><span class="price-badge">From P450</span></td></tr>
+      </tbody>
+    </table>
+ 
+    <div class="pricing-section-title">🌿 Gardening</div>
+    <table class="pricing-table">
+      <thead><tr><th>Size</th><th>Description</th><th>Price</th></tr></thead>
+      <tbody>
+        <tr><td>Small</td><td>Townhouse / front garden</td><td><span class="price-badge">P120</span></td></tr>
+        <tr><td>Medium</td><td>Standard residential garden</td><td><span class="price-badge">P220</span></td></tr>
+        <tr><td>Large</td><td>Large residential property</td><td><span class="price-badge">P350</span></td></tr>
+        <tr><td>Extra Large</td><td>Plot or estate — quote provided</td><td><span class="price-badge">From P500</span></td></tr>
+      </tbody>
+    </table>
+ 
+    <div class="pricing-section-title">📦 Moving Assistance</div>
+    <table class="pricing-table">
+      <thead><tr><th>Scope</th><th>Description</th><th>Price</th></tr></thead>
+      <tbody>
+        <tr><td>Single Item</td><td>One large item moved</td><td><span class="price-badge">P350</span></td></tr>
+        <tr><td>Room Move</td><td>Contents of one room</td><td><span class="price-badge">P300</span></td></tr>
+        <tr><td>Small House</td><td>Up to 2 bedrooms</td><td><span class="price-badge">P600</span></td></tr>
+        <tr><td>Large House</td><td>3+ bedrooms</td><td><span class="price-badge">P1,000</span></td></tr>
+      </tbody>
+    </table>
+ 
+    <div class="pricing-section-title">🔨 Handyman</div>
+    <table class="pricing-table">
+      <thead><tr><th>Task</th><th>Description</th><th>Price</th></tr></thead>
+      <tbody>
+        <tr><td>Simple Fix</td><td>Minor repairs and fixes</td><td><span class="price-badge">P120</span></td></tr>
+        <tr><td>Furniture Assembly</td><td>Flat-pack or modular furniture</td><td><span class="price-badge">P180</span></td></tr>
+        <tr><td>TV Mounting</td><td>Wall-mount installation</td><td><span class="price-badge">P250</span></td></tr>
+        <tr><td>General Repairs</td><td>Hourly rate for larger jobs</td><td><span class="price-badge">P150/hr</span></td></tr>
+      </tbody>
+    </table>
+ 
+    <div class="pricing-section-title">🔧 Plumbing &amp; Miscellaneous</div>
+    <div style="background:var(--cream);border-radius:var(--radius-md);padding:1.5rem 2rem;margin-bottom:2rem;border:1.5px solid var(--gray-200);">
+      <p style="color:var(--text-body);font-size:0.95rem;line-height:1.75;margin-bottom:0.75rem;">Plumbing and miscellaneous tasks are custom-quoted by workers. Workers submit quotes with a <strong>minimum of P150</strong>. Handled takes a 15% platform fee from each accepted quote.</p>
+      <p style="color:var(--text-muted);font-size:0.88rem;">For miscellaneous tasks, describe your job in detail when posting — the more specific you are, the better your quotes will be.</p>
+    </div>
+ 
+    <div class="transport-banner">
+      <div>
+        <strong>🚗 Transport fee — added automatically to every job</strong>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.88rem;margin-top:0.3rem;">No hidden charges — transport is always included in your final price.</p>
+      </div>
+      <div class="transport-tags">
+        <span class="transport-tag">📍 Inside Gaborone — P30</span>
+        <span class="transport-tag">📍 Outside Gaborone — P50</span>
+      </div>
+    </div>
+ 
+    <div style="margin-top:3rem;text-align:center;">
+      <a href="post-job.html" class="btn btn-primary btn-lg">Post a Job Now</a>
+    </div>
+ 
+  </div>
 </section>
-
-<footer>
-<p>Handled © 2025</p>
+ 
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">handled<span>.</span></div><div class="footer-tagline">Trusted home services in Botswana. Post a task, find a verified worker, get it done.</div></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html">House Cleaning</a></li><li><a href="services.html">Gardening</a></li><li><a href="services.html">Handyman</a></li><li><a href="services.html">Plumbing</a></li><li><a href="services.html">Moving</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul></div>
+      <div class="footer-col"><h4>Account</h4><ul><li><a href="post-job.html">Post a Job</a></li><li><a href="customer-login.html">Customer Login</a></li><li><a href="worker-login.html">Worker Login</a></li><li><a href="worker-register.html">Become a Worker</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Handled. Built for Botswana.</p><p>Launching in Gaborone ✦</p></div>
+  </div>
 </footer>
-
+ 
+<div class="toast" id="toast"></div>
+<script src="main.js"></script>
 </body>
 </html>
